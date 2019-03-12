@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Техномарт</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Техномарт»">
+    <input type="search" name="search">
+    <p>Интерент-магазин строительных материалов и товаров для ремонта</p>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      +7 (812) 666-02-66<br>
+      г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+    </section>
+    <input type="text" value="Равшан Джамшутович">
+    <ul class="user-navigation">
+      <li>
+        <a class="my-orders" href="#my-orders">Мои заказы</a>
+      </li>
+      <li>
+        <a class="personal-area" href="#personal-area">Личный кабинет</a>
+      </li>
+    </ul>
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li><a href="main.html">Главная</a></li>
+        <li><a href="company.html">Компания</a></li>
+        <li><a href="price.html">Каталог</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="special-offers.html">Спецпредложения</a></li>
+        <li><a href="delivery.html">Доставка</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="filter">
+      <h2>Фильтр</h2>
+      <div class="price">
+        <h3>Цена:</h3>
+        <input type="range">
+        <label class="min-price"><input type="text" name="min-price" value="0"></label>
+        <label class="max-price"><input type="text" name="max-price" value="3000"></label>
+      </div>
+      <div class="manufacturers">
+        <h3>Производители:</h3>
+        <ul class="manufacturers-list">
+          <li>
+            <label for="filter-bosch" class="filter-input-checkbox">
+              <input class="filter-input" type="checkbox" name="bosch" id="filter-bosch" checked>Bosch
+            </label>
+          </li>
+          <li>
+            <label for="filter-interskol" class="filter-input-checkbox">
+              <input class="filter-input" type="checkbox" name="interskol" id="filter-interskol">Интерскол
+            </label>
+          </li>
+          <li>
+            <label for="filter-makita" class="filter-input-checkbox">
+              <input class="filter-input" type="checkbox" name="makita" id="filter-makita" checked>Makita
+            </label>
+          </li>
+          <li>
+            <label for="filter-dewalt" class="filter-input-checkbox">
+              <input class="filter-input" type="checkbox" name="dewalt" id="filter-dewalt">DeWalt
+            </label>
+          </li>
+          <li>
+            <label for="filter-hitachi" class="filter-input-checkbox">
+              <input class="filter-input" type="checkbox" name="hitachi" id="filter-hitachi">Hitachi
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="supply">
+        <h3>Питание:</h3>
+        <ul>
+          <li>
+            <label for="supply-battery">
+              <input type="radio" name="battery" id="supply-battery" checked>Аккумуляторные
+            </label>
+          </li>
+          <li>
+            <label for="supply-network">
+              <input type="radio" name="network" id="supply-network">Сетевые
+            </label>
+          </li>
+        </ul>
+      </div>
+      <button class="button-transparent" type="submit">Показать</button>
+    </section>
+    <section class="sorting">
+      <h2>Сортировка:</h2>
+      <ul class="sorting-list">
+        <li class="sorting-item"><a class="active" href="#price" aria-label="Сортировка по цене">По цене</a></li>
+        <li class="sorting-item"><a href="#type" aria-label="Сортировка по типу">По типу</a></li>
+        <li class="sorting-item"><a href="#functional" aria-label="Сортировка по рейтенгу">По функционалу</a></li>
+      </ul>
+      <a class="button-sort down-up" href="#sort-down-up" aria-label="Сортировка сверху-вниз">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+          <path fill="#231F20" d="M5.5 0L0 10h11z" />
+        </svg>
+      </a>
+      <a class="button-sort top-down active" href="#sort-top-down" aria-label="Сортировка снизу-вверх">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+          <path fill="#231F20" d="M5.5 10L0 0h11" />
+        </svg>
+      </a>
+    </section>
+    <section class="commodity">
+      <ul>
+        <li>
+          <img src="img/Bosch-3000.png" alt="Перфоратор BOSCH BFG 3000">
+          <p class="title">Перфоратор BOSCH BFG 3000</p>
+          <span class="price">22500</span>
+          <span class="price-sale">15500</span>
+        </li>
+        <li>
+          <img src="img/Bosch-6000.png" alt="Перфоратор BOSCH BFG 6000">
+          <p class="title">Перфоратор BOSCH BFG 6000</p>
+          <span class="price">30500</span>
+          <span class="price-sale">25500</span>
+        </li>
+        <li>
+          <img src="img/Bosch-2000.png" alt="Перфоратор BOSCH BFG 2000">
+          <p class="title">Перфоратор BOSCH BFG 2000</p>
+          <span class="price">12500</span>
+        </li>
+        <li>
+          <img src="img/Bosch-3000.png" alt="Перфоратор BOSCH BFG 3000">
+          <p class="title">Перфоратор BOSCH BFG 3000</p>
+          <span class="price">22500</span>
+          <span class="price-sale">15500</span>
+        </li>
+        <li>
+          <img src="img/Bosch-6000.png" alt="Перфоратор BOSCH BFG 6000">
+          <p class="title">Перфоратор BOSCH BFG 6000</p>
+          <span class="price">30500</span>
+          <span class="price-sale">25500</span>
+        </li>
+        <li>
+          <img src="img/Bosch-2000.png" alt="Перфоратор BOSCH BFG 2000">
+          <p class="title">Перфоратор BOSCH BFG 2000</p>
+          <span class="price">12500</span>
+        </li>
+        <li>
+          <img src="img/Bosch-3000.png" alt="Перфоратор BOSCH BFG 3000">
+          <p class="title">Перфоратор BOSCH BFG 3000</p>
+          <span class="price">22500</span>
+          <span class="price-sale">15500</span>
+        </li>
+        <li>
+          <img src="img/Bosch-6000.png" alt="Перфоратор BOSCH BFG 6000">
+          <p class="title">Перфоратор BOSCH BFG 6000</p>
+          <span class="price">30500</span>
+          <span class="price-sale">25500</span>
+        </li>
+        <li>
+          <img src="img/Bosch-2000.png" alt="Перфоратор BOSCH BFG 2000">
+          <p class="title">Перфоратор BOSCH BFG 2000</p>
+          <span class="price">12500</span>
+        </li>
+      </ul>
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-item-current"><a>1</a></li>
+        <li class="pagination-item"><a href="#">2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+      </ul>
+      <button type="button">Следущая</button>
+    </section>
+  </main>
+  <footer>
+    <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Техномарт»">
+    <section class="contacts-footer">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+      +7 (812) 666-02-66
+    </section>
+    <ul class="navigation-footer">
+      <li><a href="company.html">Компания</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="price.html">Каталог</a></li>
+      <li><a href="delivery.html">Доставка</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+      <li><a href="materials.html">Материалы</a></li>
+      <li><a href="equipment.html">Техника</a></li>
+      <li><a href="instruments.html">Инструменты</a></li>
+      <li><a href="special-offers.html">Спецпредложения</a></li>
+    </ul>
+    <span class="">2010-2019 Компания "Техномарт" Все права защищены</span>
+    <ul class="footer-social">
+      <li class="social-vk">
+        <a href="#vk">
+          <img src="img/vk.svg" width="368" height="153" alt="Логотип Вконтакте">
+        </a>
+      </li>
+      <li class="social-fb">
+        <a href="#fb">
+          <img src="img/fb.svg" width="368" height="153" alt="Логотип Facebook">
+        </a>
+      </li>
+      <li class="social-inst">
+        <a href="#inst">
+          <img src="img/inst.svg" width="368" height="153" alt="Логотип Instagram">
+        </a>
+      </li>
+    </ul>
+    <section class="feed-back">
+      <h2>Обратная связь:</h2>
+      <a class="button" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    </section>
+    <section class="developed-by">
+      <h2>Разработано-</h2>
+      <a class="button" href="https://htmlacademy.ru">htmlacademy.ru</a>
+    </section>
+  </footer>
+</body>
+
+</html>
